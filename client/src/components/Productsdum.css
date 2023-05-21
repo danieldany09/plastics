@@ -1,0 +1,11 @@
+
+.product-content{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 

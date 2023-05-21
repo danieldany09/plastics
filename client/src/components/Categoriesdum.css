@@ -1,0 +1,12 @@
+
+.category-content{
+    margin-top: 80px;
+}
+
+
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+     
+}

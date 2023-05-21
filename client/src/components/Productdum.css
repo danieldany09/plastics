@@ -1,0 +1,117 @@
+.container1{
+   position: relative;
+   z-index: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.container1 .card1{
+   position: relative;
+   width: 300px;
+   height: 320px;
+   margin: 50px 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: rgba(255, 255, 255, 0.1);
+   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+   backdrop-filter: blur(15px);
+   border-radius: 25px;
+}
+
+.container1 .card1 .imgBx{
+   position: relative;
+   display:inline-block;
+   justify-content: center;
+   align-items: center;
+   flex-direction: cloumn;
+   padding: 20px;
+   margin-top: 0;
+   transition: 0.5s ease-in-out;
+   
+}
+
+.container1 .card1:hover .imgBx{
+   transform: translateY(-100px);
+}
+
+.container1 .card1 .imgBx img{
+   max-width: 80%;
+   margin: 0 0 0;
+   /* border-radius: 20px; */
+   
+   padding-left: 40px;
+   transition: 0.5s ease-in-out;
+   
+}
+
+
+.container1 .card1:hover .imgBx img{
+   transform: scale(1.2);
+}
+
+.container1 .card1 .imgBx h2{
+   color: #111;
+   font-weight: 600;
+   font-size:20px;
+   padding: 10px;
+   letter-spacing: 0;
+   margin: 0 60px;
+  
+}
+
+.container1 .card1 .content{
+   position: absolute;
+   bottom: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transition: 0.5s ease-in-out;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.container1 .card1:hover .content{
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(-20px);
+}
+
+.container1 .card1 .content .category,
+.container1 .card1 .content .color
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px 20px;
+}
+
+.container1 .card1 .content .category span,
+.container1 .card1 .content .color span
+{
+   color: #111;
+   font-weight: 300;
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-right: 10px;
+}
+
+.container1 .card1 .content a{
+   position: relative;
+   top: 10px;
+   display: inline-block;
+   padding: 12px 30px;
+   background: #fff;
+   border-radius: 40px;
+   font-weight: 600;
+   letter-spacing: 1px;
+   color: #111;
+   text-decoration: none;
+   text-transform: uppercase;
+}
